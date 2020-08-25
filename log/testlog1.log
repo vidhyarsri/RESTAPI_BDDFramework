@@ -1,0 +1,9 @@
+2020-08-24 19:23:44,852 [main] INFO MapsAPI - Url
+2020-08-24 19:23:45,561 [main] INFO MapsAPI - Sending "POST" request and extracting the response as a String
+2020-08-24 19:23:49,370 [main] INFO MapsAPI - Extract "Place_Id" from "post" response body
+2020-08-24 19:23:49,914 [main] INFO MapsAPI - Verifying Status and Scope in "Post" response body
+2020-08-24 19:23:49,940 [main] INFO MapsAPI - Sending "Put" request to update the address and extracting the response as a String
+2020-08-24 19:23:52,819 [main] INFO MapsAPI - Verifying updated message in "Put" response body
+2020-08-24 19:23:52,831 [main] INFO MapsAPI - Sending "Delete" request to clear the address and extracting the response as a String
+2020-08-24 19:23:55,762 [main] INFO MapsAPI - verifying if status is "OK" in response body, after deleting the address
+2020-08-24 19:23:55,781 [main] INFO MapsAPI - Verifying if address has been successfully deleted using "Get" request

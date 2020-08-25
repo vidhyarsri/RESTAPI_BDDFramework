@@ -1,0 +1,172 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-25T00:23:44.699Z",
+        "line": 16,
+        "name": "Verifying Map API using CRUD operations using Data Driven concept",
+        "description": "",
+        "id": "validating-map-api-s;verifying-map-api-using-crud-operations-using-data-driven-concept;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 807777600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "That url is entered",
+            "match": {
+              "location": "StepDefinitions.entering_Url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3809321700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add payload with \"AAHouse\"  \"English\" \"32- SeaCross Center, USA\" \"(+91) 222 893 3007\"using Post Http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AAHouse\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"English\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"32- SeaCross Center, USA\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"(+91) 222 893 3007\"",
+                  "offset": 65
+                }
+              ],
+              "location": "StepDefinitions.add_payload_using_post_Http_request(String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 542419900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "retrieve place_id\u0027s value from response body",
+            "match": {
+              "location": "StepDefinitions.retrieve_PlaceId_from_response_body()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25693800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify status is \"OK\" and scope is \"APP\" in response body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefinitions.verify_Status_And_Scope_In_response_body(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2877468500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "update address as \"101 WestSide, USA\" using Put Http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"101 WestSide, USA\"",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.update_Address_Using_Put_HttpRequest(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11961100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify that updated response message is \"Address successfully updated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address successfully updated\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.verify_Updated_ResponseMessage(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2948416100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "clear data using Delete Http request. Check if status is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 57
+                }
+              ],
+              "location": "StepDefinitions.clear_data_using_Delete_Http_request_check_if_status_is(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2571441500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify if data is successfully deleted using Get Http request and response message is \"Get operation failed, looks like place_id  doesn\u0027t exists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Get operation failed, looks like place_id  doesn\u0027t exists\"",
+                  "offset": 86
+                }
+              ],
+              "location": "StepDefinitions.verify_if_data_is_successfully_deleted_using_get_Http_request_and_response_message_is(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Validating Map API\u0027s",
+    "description": "",
+    "id": "validating-map-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/placeValidations.feature",
+    "tags": []
+  }
+]
