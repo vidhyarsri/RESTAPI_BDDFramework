@@ -7,7 +7,7 @@ website. The features, Scenario and Scenario Outline are written in Gherkin form
 This project highlights usage of JSON HTTP request methods such as POST, GET, PUT, and DELETE, and verify the
 response of these requests. Generated an HTML test report using maven-cucumber-report plugin.
 
-### *** Cucumber Test report
+### *** Cucumber Test Report
 ![API-Cucumber report](https://user-images.githubusercontent.com/61662759/93028020-9f248a80-f5d6-11ea-88b0-3769ee2cec8a.PNG)
 
 
