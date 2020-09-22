@@ -3,7 +3,7 @@
 ### REST-Assured API Test Automation using Maven and BDD-Cucumber Framework
 
 Demonstration of Rest-Assured with Maven, Java, JUnit and BDD-Cucumber, to automate REST web service using a practice
-website. The features, Scenario and Scenario Outline are written in Gherkin format and glued with step definitions.
+website.  Test cases under "TestCases folder", are written in excel, and based on it, demonstrated the following concepts. The features, Scenario and Scenario Outline are written in Gherkin format and glued with step definitions.
 This project highlights usage of JSON HTTP request methods such as POST, GET, PUT, and DELETE, and verify the
 response of these requests. Generated an HTML test report using maven-cucumber-report plugin.
 
